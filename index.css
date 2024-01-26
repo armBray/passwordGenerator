@@ -28,9 +28,9 @@ body {
 }
 
 .container {
-    background-color: var(--dark-palette-1); 
-    width: 900px;
+    width: 680px;
     padding: 4rem 2rem;
+    background-color: var(--dark-palette-1); 
 }
 
 .upper {
@@ -173,9 +173,9 @@ display: flex;
 align-items: center;
 justify-content: center;
 
-color: #10B981;
+color: white;
 background: #273549;
-border: 1px solid #fff;;
+border: 2px solid #10B981;
 border-radius: 50%;
 
 margin-right: 50px;

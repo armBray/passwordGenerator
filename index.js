@@ -5,16 +5,14 @@ console.log(characters);
 let pswLenght = 15
 const slideValue = document.querySelector(".sliderValue");
 const inputSlider = document.querySelector("input");
+slideValue.textContent = inputSlider.value;
 inputSlider.oninput = () => {
     let value = inputSlider.value;
 	slideValue.textContent = value;
     pswLenght = inputSlider.value
 };
 
-// let psw1 = getRandomPsw()
-// let psw2 = getRandomPsw()
-// let psws = [psw1, psw2]
-// console.log(psws)
+
 
 const buttonGenerator = document.getElementById('generator')
 const inputEl1 = document.getElementById('input-1')
