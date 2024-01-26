@@ -1,25 +1,64 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Karla:wght@800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <div class="container">
-            <div class="upper">
-                <h1 class="title-1">Generate a</h1>
-                <h1 class="title-2">random password</h1>
-                <p>Never use an insecure password again.</p>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Karla:wght@800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="upper">
+            <h1 class="title-1">Generate a</h1>
+            <h1 class="title-2">random password</h1>
+            <p>Never use an insecure password again.</p>
+            <div class="div-generator">
                 <button id="generator">Generates passwords</button>
-            </div>
-            <hr>
-            <div class="lower">
-                <span id="input-1"></span>
-                <span id="input-2"></span>
+                <div class="options">
+                    <div class="range">
+                        <label for="length">Length</label>
+                        <div class="sliderValue">
+                        </div>
+                        <div class="field">
+                            <div class="value left">
+                                5</div>
+                            <input type="range" id="length" name="length" min="5" max="20" value="15" steps="1">
+                            <div class="value right">
+                                20</div>
+                        </div>
+                    </div>
+                    <div class="filter">
+                        <div class="div-uppercase">
+                            <label for="uppercase">ABC</label>
+                            <input type="checkbox" id="uppercase" name="uppercase" value="ABC" checked />
+                        </div>
+                        <div class="div-lowercase">
+                            <label for="lowercase">abc</label>
+                            <input type="checkbox" id="lowercase" name="lowercase" value="abc" checked />
+                        </div>
+                        <div class="div-number">
+                            <label for="number">123</label>
+                            <input type="checkbox" id="number" name="number" value="123" checked />
+                        </div>
+                        <div class="div-specials">
+                            <label for="specials">specials</label>
+                            <input type="checkbox" id="specials" name="specials" value="specials" checked />
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        
-        <script src="index.js"></script>
-    </body>
+        <hr>
+        <div class="lower">
+            <span id="input-1"></span>
+            <span id="input-2"></span>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
 </html>
